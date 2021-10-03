@@ -1,6 +1,12 @@
 <?php 
+// Задание выполнено! регистр сохраняется за позицией, знаки препинания остаются на месте!
 require_once (/Class/ReversStrops.php);
-$str = 'При!вет! Давно не виде.лись.';
-$stropsrevers = new ReversStrops;
-$stropsrevers ->getStrops($str);
-echo $stropsrevers;
+$str = 'Привет! Давно не виделись.';
+$stropsrevers = new ReversStrops($str);
+$strops = $stropsrevers ->getStrops();
+echo $strops;
+echo '<br>';
+$str = 'Вот, другие знаки! И знак вну!три сло№ва.';
+$stropsrevers = new ReversStrops($str);
+$strops = $stropsrevers ->getStrops();
+echo $strops;
