@@ -5,7 +5,7 @@ use PHPUnit\Framework\TestCase;
 class ReversStropsTest extends TestCase {
     public function testPower()
     {
-        $my = new ReversStrops('Ïðè!âåò! Äàâíî íå âèäå.ëèñü.');
+        $my = new ReversStrops('ÐŸÑ€Ð¸!Ð²ÐµÑ‚! Ð”Ð°Ð²Ð½Ð¾ Ð½Ðµ Ð²Ð¸Ð´Ðµ.Ð»Ð¸ÑÑŒ.');
         $my->getStrops();
  }
 }
