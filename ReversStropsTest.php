@@ -6,6 +6,7 @@ class ReversStropsTest extends TestCase {
     public function testPower()
     {
         $my = new ReversStrops('При!вет! Давно не виде.лись.');
-        $my->getStrops();
+        $strops = $my->getStrops();
+        echo $strops;
  }
 }
